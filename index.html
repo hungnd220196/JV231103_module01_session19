@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Localstorage</h1>
+
+    <form action="">
+      <script src="https://cdn.jsdelivr.net/npm/uuid@8.3.2/dist/umd/uuidv4.min.js"></script>
+      <h3 id="heading3">Đăng ký</h3>
+      <label for="">Tên</label>
+      <input id="username" type="text" />
+      <label for="">giới tính</label>
+      <input checked ` value="0" name="gender" type="radio" />Nữ
+      <input value="1" name="gender" type="radio" />Nam
+      <input value="2" name="gender" type="radio" />Khác
+      <label for="">Ngày sinh</label>
+      <input id="dateOfBirth" type="date" />
+      <label for="">Email</label>
+      <input id="Email" type="text" />
+      <label for="">Mật khẩu</label>
+      <input id="password" type="password" />
+      <button type="button" id="btnSubmit">Thêm mới</button>
+    </form>
+    <button id="btnLogOut">Log Out</button>
+
+    <!-- danh sách user -->
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>STT</th>
+          <th>Tên</th>
+          <th>Giới tính</th>
+          <th>Ngày sinh</th>
+          <th>Email</th>
+          <th>Mật khẩu</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
